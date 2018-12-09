@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Paper } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import RightPanel from "./RightPanel";
 import LeftPanel from "./LeftPanel";
 
@@ -9,7 +9,7 @@ const style = {
 
 export default props => {
   return (
-    <Grid container spacing={16} sm={12}>
+    <Grid container spacing={16}>
       <Grid item sm={6}>
         <RightPanel style={style} />
       </Grid>

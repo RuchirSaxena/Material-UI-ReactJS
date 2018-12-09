@@ -1,10 +1,14 @@
-import React, { Component, Fragment } from "react";
+import React, { Fragment } from "react";
 import { Header, Footer } from "./Layout";
 import Excersises from "./Excercises";
+import { muscles, exercises } from "../store";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      exercises
+    };
   }
 
   render() {
@@ -12,7 +16,7 @@ class App extends React.Component {
       <Fragment>
         <Header />
         <Excersises />
-        <Footer />
+        <Footer muscles={muscles} />
       </Fragment>
     );
   }
